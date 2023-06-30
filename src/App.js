@@ -13,12 +13,12 @@ export default function App() {
   // Logic
   const add = () => {
     console.log("add");
-    return setCounter(counter + 1);
+    setCounter(counter + 1);
   };
 
   const subtract = () => {
     console.log("subtract");
-    return setCounter(counter - 1);
+    if (counter >= 0) setCounter(counter - 1);
   };
 
   const handleAdd = () => {
